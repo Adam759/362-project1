@@ -8,6 +8,7 @@
   <link rel="sytlesheet" media="screen" href="css/normalize.css" />
   <link rel="stylesheet" media="screen" href="css/screen.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/script.js" async></script>
 </head>
 <body>
 
@@ -19,23 +20,27 @@
 </div>
   <div class="main_container">
 
-    <form id="info_form">
+    <form id="info_form" method="GET" action=#null>
       <div id="header">
         <h1>Enter your information to receive the weekly transmission</h1>
       </div>
 
       <div id="name" class="entry_container">
-        <label>Name: </label><input class="entry" type="text" placeholder="First Last" name="name_field"/>
+        <label>Name: </label><input class="entry" id="namein" type="text" placeholder="First or First and Last" name="name_field"/>
       </div>
 
       <div id="email" class="entry_container">
-        <label>Email: </label><input class="entry" type="email" placeholder="user@example.com" name="email_field"/>
+        <label>Email: </label><input class="entry" id="emailin" type="email" placeholder="user@example.com" name="email_field"/>
+      </div>
+
+      <div id="interest" class="entry_container">
+        <label>Interests: </label><input class="entry" id="interestsin" type="text" placeholder="Tech, Idustrial, Science, Art, etc" name="interests_field"/>
       </div>
 
     </form>
 
     <div id="submit">
-      <button class="sub_button" type="submit" form="info_form">Sign Up</button>
+      <button class="sub_button" id="sub_button" type="submit" form="info_form">Sign Up</button>
     </div>
 
   </div>

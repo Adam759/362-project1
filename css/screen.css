@@ -28,6 +28,9 @@ body {
   display: flex;
   justify-content: center;
   animation: 0.7s ease-out 0s 1 flashIntro;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
   font-weight: 700;
   background-color: rgba(10,10,10,0.3);
   margin: 0 auto;
@@ -36,9 +39,6 @@ body {
   height: 30%;
   padding: 3% 6% 3% 6%;
   font-size: 80%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-align: center;
   transition: 1s;
 }
 
@@ -76,17 +76,17 @@ label {
 }
 .entry_container {
   text-align: right;
-  margin-right: 17%;
+  margin-right: 10%;
 }
 .entry {
   margin-top: 2vh;
-  width: 40vw;
+  width: 45vw;
   height: 5vh;
   text-align: left;
-  background-color: rgba(20,20,20,0.9);
+  background-color: rgba(0,0,0,0.9);
   color: #ECECEC;
   border: 0px;
-  font-size: 80%;
+  font-size: 50%;
   padding-left: 1%;
   font-family: "Courier Prime";
 }
@@ -97,7 +97,7 @@ label {
   margin-top: 5vh;
   height: 7vh;
   width: 30vw;
-  background-color: rgba(20,20,20,0.9);
+  background-color: rgba(0,0,0,0.9);
   color: #ECECEC;
   border: 0px;
   transition: 0.5s;
@@ -146,5 +146,6 @@ label {
     margin-top: 6vh;
     height: 7vh;
     width: 15vw;
+    font-size: 125%;
   }
 }
