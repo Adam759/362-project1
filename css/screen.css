@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+body {
+  background-image: url("../img/background-large.jpg");
+  background-repeat: no-repeat;
+  background-position: 55% 45%;
+  background-size: 500%;
+  background-color: #060909;
+  text-align: center;
+  margin: 0 auto;
+  color: #ECECEC;
+  font-family: "Cabin";
+}
+.main_container {
+  margin: 0 auto;
+  width: 75%;
+  height: 85%;
+  margin-top: 20%;
+  padding: 2% 0 2% 0;
+  background-color: rgba(25, 25, 25, 0.9);
+}
+h1 {
+  font-size: 90%;
+  margin: 2vh 0 4vh 0;
+}
+label {
+  margin-right: 1vw;
+  font-size: 50%;
+}
+.entry_container {
+  text-align: right;
+  margin-right: 18%;
+}
+.entry {
+  margin-top: 2vh;
+  width: 35vw;
+  height: 5vh;
+  text-align: left;
+  background-color: #0D1010;
+  color: #ECECEC;
+  border: 0px;
+  font-size: 60%;
+}
+.sub_button {
+  margin-top: 5vh;
+  height: 7vh;
+  width: 30vw;
+  background-color: #0D1010;
+  color: #ECECEC;
+  border: 0px;
+}
+.sub_button:hover {
+  background-color: #1F2424;
+}
+/*Desktop Upscaling*/
+@media only screen and (min-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+  .main_container {
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 10%;
+  }
+  h1 {
+    font-size: 200%;
+  }
+  label {
+    font-size: 100%;
+  }
+  .entry_container {
+    margin-right: 15%;
+  }
+  .entry {
+    margin-top: 2vh;
+    width: 21vw;
+    height: 5vh;
+    font-size: 100%;
+  }
+  .sub_button {
+    margin-top: 6vh;
+    height: 7vh;
+    width: 15vw;
+  }
+}
