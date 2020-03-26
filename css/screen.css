@@ -36,7 +36,7 @@ body {
   width: 75%;
   height: 30%;
   padding: 3% 6% 3% 6%;
-  font-size: 80%;
+  font-size: 4vw;
   transition: 1s;
 }
 .sub_head {
@@ -126,24 +126,43 @@ label {
   text-align: center;
   width: 50%;
   height: 20%;
-  top: 20%;
+  top: 15%;
   left: 25%;
   background: rgb(40,40,40);
+  transition: 0.4s;
 }
 .alert_ack p {
   position: relative;
   top: 25%;
 }
-
-/*Desktop Upscaling*/
+.alert_ack:hover {
+  background-color: rgb(40,40,60);
+}
+/*Tablet Upscaling*/
 @media only screen and (min-width: 768px) {
+  .sub_head {
+    font-size: 110%;
+  }
+  .entry {
+    font-size: 110%;
+  }
+  .entry_container {
+    text-align: right;
+    margin-right: 15%;
+  }
+  .main_container {
+    margin-top: 4%;
+  }
+}
+/*Desktop Upscaling*/
+@media only screen and (min-width: 1024px) {
   body {
     background-size: cover;
     background-position: center;
   }
   .main_head {
     margin-top: 2%;
-    font-size: 300%;
+    font-size: 3vw;
     padding: 1% 5% 1% 5%;
   }
   .main_container {
@@ -170,7 +189,7 @@ label {
     margin-top: 2vh;
     width: 30vw;
     height: 5vh;
-    font-size: 150%;
+    font-size: 110%;
   }
   .sub_button {
     margin-top: 6vh;
@@ -200,5 +219,11 @@ label {
   .alert_ack p {
     position: relative;
     top: 35%;
+  }
+}
+/*Large Screen Upscaling*/
+@media only screen and (min-width: 1920px) {
+  .entry {
+    font-size: 160%;
   }
 }
