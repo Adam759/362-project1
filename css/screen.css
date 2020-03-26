@@ -96,6 +96,7 @@ label {
   color: #ECECEC;
   border: 0px;
   transition: 0.5s;
+  font-size: 3vw;
 }
 .sub_button:hover {
   background-color: rgba(40,40,60,0.9);
@@ -152,6 +153,13 @@ label {
   }
   .main_container {
     margin-top: 4%;
+  }
+  .alert_text {
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+  .alert_box h1 {
+    font-size: 4vw;
   }
 }
 /*Desktop Upscaling*/
@@ -225,5 +233,12 @@ label {
 @media only screen and (min-width: 1920px) {
   .entry {
     font-size: 160%;
+  }
+  .alert_box h1 {
+    font-size: 2vw;
+  }
+  .alert_text {
+    margin-top: 10%;
+    margin-bottom: 0%;
   }
 }
