@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   $("#info_form").submit(function(){
     if (/^[a-zA-Z ]+$/.test($("#namein").val())){
       if (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test($("#emailin").val())){
@@ -18,5 +17,4 @@ $(document).ready(function(){
       return false;
     }
   });
-
 });
