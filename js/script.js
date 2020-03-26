@@ -1,3 +1,9 @@
+function alert_message(mes){
+  alert(mes);
+  $(".alert_text").text(mes);
+  $(".alert_container").css('display','block');
+}
+
 $(document).ready(function(){
   $("#info_form").submit(function(){
     if (/^[a-zA-Z ]+$/.test($("#namein").val())){
@@ -10,11 +16,17 @@ $(document).ready(function(){
         }
       } else {
         alert("Please enter a valid email");
+        alert_message("Please enter a valid email");
         return false;
       }
     } else {
       alert("Please enter a valid name");
+      alert($(".alert_container").get());
       return false;
     }
+  });
+  $(".alert_ack").click(function(){
+    $(".alert_container").css('display','none');
+    $(".alert_text").text("Please Check Your Input");
   });
 });
