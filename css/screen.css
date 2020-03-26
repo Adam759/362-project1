@@ -110,11 +110,15 @@ label {
 }
 .alert_box {
   position: fixed;
-  width: 40%;
+  width: 70%;
   height: 30%;
-  top: 35%;
-  left: 30%;
+  top: 10%;
+  left: 15%;
   background: rgb(20,20,20);
+}
+.alert_text {
+  font-size: 80%;
+  margin-top: 20%;
 }
 
 /*Desktop Upscaling*/
@@ -159,5 +163,15 @@ label {
     height: 7vh;
     width: 15vw;
     font-size: 125%;
+  }
+  .alert_box {
+    width: 40%;
+    top: 10%;
+    left: 30%;
+    background: rgb(20,20,20);
+  }
+  .alert_text {
+    font-size: 100%;
+    margin-top: 10%;
   }
 }
