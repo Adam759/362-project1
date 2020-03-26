@@ -1,4 +1,5 @@
-function alert_message(mes){
+function alert_message(head, mes){
+  $(".alert_box h1").text(head);
   $(".alert_text").text(mes);
   $(".alert_container").css('display','block');
 }
@@ -8,17 +9,21 @@ $(document).ready(function(){
     if (/^[a-zA-Z ]+$/.test($("#namein").val())){
       if (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test($("#emailin").val())){
         if ($("#interestsin").val() !== ""){
-          alert_message("Your info has been recorded. Check your email every Friday for new and exciting things! **This is not a real service, for now...**");
+          if(confirm("Are you ready to submit?")){
+            alert("Your info will now be submitted. Check your email every Friday for new and exciting things!")
+          } else {
+            return false;
+          }
         } else {
-          alert_message("Please enter at least one interest! Everyone has at least one.");
+          alert_message("Interest Error", "Please enter at least one interest! Everyone has at least one.");
           return false;
         }
       } else {
-        alert_message("Please enter a valid email");
+        alert_message("Email Error", "Please enter a valid email");
         return false;
       }
     } else {
-      alert_message("Please enter a valid name");
+      alert_message("Name Error", "Please enter a valid name");
       return false;
     }
   });
